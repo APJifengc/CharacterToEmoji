@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-
+ 
 <head>
     <title>汉字转Emoji!</title>
     <meta charset="utf-8" />
@@ -9,7 +9,7 @@
         #cnblogs_post_body ul li {
             font: 17px/2 Noto Sans SC !important
         }
-
+ 
         html,
         body,
         p,
@@ -17,33 +17,33 @@
             margin: 0.1;
             padding: 0
         }
-
+ 
         header,
         footer,
         details {
             display: block
         }
-
+ 
         html,
         body {
             border: 0
         }
-
+ 
         [hidefocus],
         summary {
             outline: 0
         }
-
+ 
         sup,
         sub {
             font-size: 83%
         }
-
+ 
         a,
         button {
             cursor: pointer
         }
-
+ 
         body,
         textarea,
         input,
@@ -55,16 +55,16 @@
             color: #333;
             outline: 0
         }
-
+ 
         body {
             background: #fff
         }
-
+ 
         a,
         a:hover {
             color: #7396a7
         }
-
+ 
         .bg_black {
             background: rgba(0, 0, 0, 0.6);
             position: fixed;
@@ -72,16 +72,16 @@
             height: 100%;
             z-index: 99999
         }
-
+ 
         body {
             cursor: url(https://files-cdn.cnblogs.com/files/miluluyo/cursora.ico), auto
         }
-
+ 
         * {
             font-family: "Noto Sans SC";
             font-weight: 100
         }
-
+ 
         #blogTitle {
             overflow: hidden;
             width: 100%;
@@ -90,7 +90,7 @@
             text-align: center;
             display: table
         }
-
+ 
         body::after {
             content: "";
             background-repeat: no-repeat;
@@ -109,19 +109,19 @@
             height: 100%;
             z-index: -1
         }
-
+ 
         body {
             text-align: center;
             background: url(https://images.cnblogs.com/cnblogs_com/miluluyo/1764887/o_20051406473719.jpg);
         }
-
+ 
         div#main {
             max-width: 1200px;
             margin: 0 auto;
             justify-content: center;
             display: -webkit-flex
         }
-
+ 
         input {
             background-color: rgba(254, 252, 250, 0.6);
             border-color: #ddd;
@@ -141,7 +141,7 @@
             vertical-align: middle;
             margin-top: 10px;
         }
-
+ 
         h1 {
             font-family: 'Playball', cursive;
             color: #fff;
@@ -153,13 +153,13 @@
             animation: fade-in-down 1s both;
             animation-delay: 0.5s;
         }
-
+ 
         #home {
             opacity: 0.85;
             margin: 0 auto;
             margin-top: 0px;
             margin-bottom: 0px;
-
+ 
             background-color: #fff;
             padding: 30px;
             margin-top: 18px;
@@ -169,13 +169,13 @@
             font-size: 2rem;
             font-weight: 300;
         }
-
+ 
     </style>
 </head>
-
+ 
 <body>
-
-
+ 
+ 
     <div id="blogTitle" style="margin-bottom: 0px;">
         <div class="vertical">
             <br>
@@ -191,7 +191,7 @@
             转化结果：<span id="J_output">尚未转化</span>
         </p>
     </div>
-
+ 
     <script>
         var PinYin = {
             "a": "\u554a\u963f\u9515",
@@ -596,7 +596,7 @@
             "zun": "\u5c0a\u9075\u6499\u6a3d\u9cdf",
             "zuo": "\u6628\u5de6\u4f50\u67de\u505a\u4f5c\u5750\u5ea7\u961d\u963c\u80d9\u795a\u9162",
         };
-
+ 
         var Emoji = {
             "!": "❗",
             "+": "➕",
@@ -639,46 +639,86 @@
             "Z": "ℤ",
             "a": "𝕒",
             "ai": "💓",
+            "an": "🔳",
+            "ang": "🤗",
+            "ao": "😯",
             "b": "𝕓",
             "ba": "➑",
             "bai": "⚪",
+            "ban": "🦓",
+            "bang": "💥",
             "bao": "🎒",
             "bei": "🀃",
             "ben": "📒",
+            "beng": "💥",
             "bi": "👃",
+            "bia": "💇",
             "bian": "🦇",
             "biao": "⌚",
+            "bie": "🙅",
+            "bin": "🙍", 
             "bing": "🍪",
             "bo": "🍍",
-            "bu": "🍮",
+            "bu": "❌",
             "c": "𝕔",
+            "ca": "🤗",
             "cai": "👎",
+            "can": "🍴",
+            "cang": "🙈",
             "cao": "🍀",
             "ce": "🚾",
+            "cen": "🤐",
+            "ceng": "🤐",
             "cha": "❌",
+            "chai": "❌", 
+            "chan": "🤤",
+            "chang": "🎤",
+            "chao": "🏪",
             "che": "🚖",
+            "chen": "🌄",
             "cheng": "🏰",
             "chi": "👄",
             "chong": "🐛",
+            "chou": "💩",
+            "chu": "📤",
+            "chuai": "💃",
             "chuan": "🍡",
+            "chuang": "🛏",
             "chui": "👊",
             "chun": "🀦",
+            "chuo": "🖕",
+            "ci": "😁",
+            "cong": "🐛",
+            "cou": "💩",
+            "cu": "💐",
+            "cuan": "🦍",
+            "cui": "🍟",
+            "cun": "🏡",
             "cuo": "❌",
             "d": "𝕕",
             "da": "✊",
+            "dai": "😦",
+            "dan": "🥚",
             "dang": "🈺",
             "dao": "🔪",
             "de": "🉐",
-            "dei": "🉐",
             "deng": "💡",
             "di": "🌍",
+            "dia": "💃",
             "dian": "⚡",
+            "diao": "☔",
             "die": "🦋",
             "ding": "👀",
+            "diu": "😘",
             "dong": "👌",
+            "dou": "∀",
+            "du": "🍵",
+            "duan": "💔",
             "dui": "✅",
+            "dun": "🔨",
+            "duo": "🙈",
             "e": "𝕖",
-            "e": "😈",
+            "en": "✅",
             "er": "👂",
             "f": "𝕗",
             "fa": "🀅",
@@ -687,31 +727,49 @@
             "fei": "☕",
             "fen": "💯",
             "feng": "🐝",
+            "fou": "❌",
             "fo": "🧘",
             "fu": "🦇",
             "g": "𝕘",
+            "ga": "🦆",
+            "gai": "😂",
             "gan": "🥂",
+            "gang": "🥃",
+            "gao": "🕺",
             "ge": "🈹",
+            "gei": "😘",
+            "gen": "√",
+            "geng": "√",
             "gong": "🏹",
             "gou": "🐶",
             "gu": "🍄",
             "gua": "🍉",
-            "guan": "👑",
+            "guai": "👾",
             "guan": "📴",
+            "guang": "💡",
             "gui": "🐢",
-            "gui": "👻",
+            "gun": "🙄",
             "guo": "🍎",
             "h": "𝕙",
+            "ha": "😆",
+            "hai": "👦",
             "han": "💦",
+            "hang": "🙌",
             "hao": "🆗",
             "he": "🈴",
             "hei": "⚫",
+            "hen": "🙎",
+            "heng": "🙎",
             "hong": "🔴",
             "hou": "🐒",
             "hu": "🐅",
             "hua": "💐",
+            "huai": "💔",
+            "huan": "👐",
+            "huang": "💛",
             "hui": "👋",
-            "huo": "🌋",
+            "hun": "💑",
+            "huo": "🔥",
             "i": "𝕚",
             "j": "𝕛",
             "ji": "🐔",
@@ -722,104 +780,204 @@
             "jie": "🤰",
             "jin": "🈲",
             "jing": "🐋",
-            "jing": "👓",
+            "jiong": "😖",
             "jiu": "🍺",
             "ju": "🍊",
             "juan": "🌯",
+            "jue": "👍",
+            "jun": "👮",
             "k": "𝕜",
             "ka": "☕",
+            "kai": "🔓",
             "kan": "👀",
+            "kang": "👀",
+            "kao": "📖",
             "ke": "🉑",
+            "ken": "🉑",
+            "keng": "🉑",
             "kong": "🈳",
+            "kou": "👄",
             "ku": "👖",
+            "kua": "👍",
             "kuai": "🥢",
+            "kuan": "ﬦ",
+            "kuang": "🔳",
+            "kui": "😖",
             "kun": "💤",
+            "kuo": "🙌",
             "l": "𝕝",
             "la": "🌶",
+            "lai": "☄",
             "lan": "🔵",
             "lang": "🏄",
             "lao": "🧀",
             "le": "🆗",
+            "lei": "😿",
+            "leng": "🤯",
             "li": "🍐",
             "lian": "🔗",
+            "liang": "💡",
+            "liao": "🆗",
+            "lie": "💔",
+            "lin": "🌲",
             "ling": "🔔",
             "liu": "➏",
             "long": "🐉",
+            "lou": "🏬",
             "lu": "🦒",
+            "luan": "🥚",
+            "lue": "…",
+            "lun": "⏰",
             "luo": "🍍",
+            "lv": "💚",
             "m": "𝕞",
             "ma": "🐎",
             "mai": "🎤",
             "man": "🈵",
-            "mao": "🐈",
+            "mang": "😪",
+            "mao": "🐱",
+            "me": "😗",
             "mei": "🍓",
+            "men": "🚪",
             "meng": "🍋",
-            "mi": "🐝",
+            "mi": "🍚",
             "mian": "🍜",
+            "miao": "🐱",
+            "mie": "🐑",
+            "min": "💡",
+            "ming": "💡",
+            "miu": "🚫",
             "mo": "😈",
+            "mou": "🐮",
+            "mu": "🌲",
             "n": "𝕟",
+            "na": "🤚",
             "nai": "🥛",
-            "nan": "🎃",
-            "nan": "👦",
+            "nan": "🀁",
+            "nang": "💊",
             "nao": "🧠",
+            "ne": "😀",
             "nei": "👙",
+            "nen": "🆗",
             "ni": "🙇",
+            "nian": "📅",
+            "niang": "👩",
             "niao": "🐦",
+            "nie": "🤞",
+            "nin": "🍋",
             "ning": "🍋",
-            "niu": "🐂",
+            "niu": "🐮",
+            "nong": "🤟",
             "nu": "💢",
+            "nuan": "🔥",
+            "nue": "💇",
+            "nuo": "🍙",
             "nv": "👧",
             "o": "𝕠",
+            "ou": "🆗",
             "p": "𝕡",
+            "pa": "🐜",
             "pai": "👏",
             "pan": "📀",
+            "pang": "🤰",
+            "pao": "🚀",
+            "pei": "👫",
+            "pen": "⛲",
+            "peng": "⛲",
             "pi": "💨",
+            "pian": "🛑",
+            "piao": "🎟",
+            "pie": "🙄",
+            "pin": "🍎",
             "ping": "🍎",
+            "po": "💔",
+            "pou": "🗡",
             "pu": "🍇",
             "q": "𝕢",
             "qi": "💢",
+            "qia": "🤞",
             "qian": "💰",
             "qiang": "👍",
             "qiao": "🍫",
             "qie": "🍆",
             "qin": "💏",
+            "qing": "💏",
+            "qiong": "🤑",
             "qiu": "⚽",
+            "qu": "🧘",
             "quan": "👊",
+            "que": "💔",
+            "qun": "👪",
             "r": "𝕣",
+            "ran": "🔥",
+            "rang": "✅",
+            "rao": "⭕",
+            "re": "🔥",
             "ren": "🎅",
+            "reng": "🎅",
             "ri": "😎",
+            "rong": "🍷",
             "rou": "🍖",
+            "ru": "📥",
+            "ruan": "🍦",
+            "rui": "🗡",
+            "run": "⏺",
             "ruo": "👎",
             "s": "𝕤",
             "sa": "🍕",
+            "sai": "🏁",
             "san": "☔",
+            "sang": "👄",
             "sao": "🤤",
             "se": "😍",
+            "sen": "🌲",
+            "seng": "🌲",
             "sha": "🦈",
+            "shai": "🎲",
             "shan": "⛰",
             "shang": "👆",
+            "shao": "🔥",
             "she": "🐍",
             "shen": "🈸",
             "sheng": "🤱",
             "shi": "💩",
             "shou": "✋",
             "shu": "🐀",
+            "shua": "🎉",
+            "shuai": "👦",
+            "shuan": "🥣",
+            "shuang": "💑",
             "shui": "💧",
+            "shun": "👄",
             "shuo": "👄",
             "si": "➍",
+            "song": "🎉",
+            "sou": "🔍",
+            "su": "🚴",
             "suan": "🍋",
             "sui": "💔",
+            "sun": "👦",
             "suo": "🔒",
             "t": "𝕥",
+            "ta": "👦",
             "tai": "🌞",
+            "tan": "🍪",
             "tang": "🍬",
             "tao": "🍑",
+            "te": "🌝",
+            "teng": "🌠",
+            "ti": "👯",
             "tian": "👅",
+            "tiao": "👯",
+            "tie": "💑",
             "ting": "👂",
+            "tong": "🥛",
             "tou": "🎲",
             "tu": "🐇",
+            "tuan": "🍙",
             "tui": "🍗",
             "tun": "🐡",
+            "tuo": "😵",
             "u": "𝕦",
             "v": "𝕧",
             "w": "𝕨",
@@ -828,7 +986,9 @@
             "wan": "🀇",
             "wan": "🂠",
             "wang": "🃏",
+            "wei": "😲",
             "wen": "👄",
+            "weng": "🐞",
             "wo": "🐌",
             "wu": "🈚",
             "x": "𝕩",
@@ -838,43 +998,72 @@
             "xiang": "🐘",
             "xiao": "😀",
             "xie": "🦀",
-            "xin": "💌",
             "xin": "💓",
             "xing": "🦍",
+            "xiong": "🐻",
+            "xiu": "😊",
             "xu": "🤫",
+            "xuan": "🙇",
             "xue": "⛄",
+            "xun": "🙊",
             "y": "𝕪",
             "ya": "🦆",
             "yan": "👀",
-            "yan": "🚬",
             "yang": "🐏",
             "yao": "💊",
             "ye": "🥥",
             "yi": "👕",
             "yin": "🎵",
             "ying": "🍒",
-            "ying": "🦅",
-            "you": "🏊",
+            "yo": "😯",
+            "yong": "🤗",
             "you": "👉",
             "yu": "🐟",
+            "yuan": "🧐",
             "yue": "🌕",
+            "yun": "⛅",
             "z": "𝕫",
+            "za": "🔨",
+            "zai": "📩",
             "zan": "👍",
+            "zang": "💩",
+            "zao": "🌄",
+            "ze": "😒",
+            "zei": "🧛",
+            "zen": "❓",
+            "zeng": "❓",
+            "zha": "💥",
+            "zhai": "💸",
+            "zhan": "🕺",
             "zhang": "✋",
             "zhao": "🎥",
             "zhe": "🐝",
             "zhen": "💉",
+            "zheng": "💉",
             "zhi": "🈯",
             "zhong": "🀄",
+            "zhou": "⭕",
             "zhu": "🐖",
+            "zhua": "👏",
+            "zhuai": "😒",
+            "zhuan": "😳",
+            "zhuang": "🙈",
+            "zhui": "☔",
+            "zhun": "✅",
+            "zhuo": "🙌",
+            "zi": "👦",
+            "zong": "👞",
+            "zou": "👭",
+            "zu": "👣",
             "zuan": "💎",
             "zui": "👄",
+            "zun": "🥛",
             "zuo": "👈",
         };
-
+ 
         var warning = "";
         var warned = false;
-
+ 
         // 汉字转拼音
         function ConvertPinyin(l1) {
             warning = "";
@@ -915,7 +1104,7 @@
             }
             return I1;
         }
-
+ 
         // 在对象中搜索
         function arraySearch(l1, l2) {
             for (var name in PinYin) {
@@ -926,18 +1115,18 @@
             }
             return false;
         }
-
+ 
         var btn = document.getElementById('J_btn'),
             input = document.getElementById('J_input'),
             output = document.getElementById('J_output');
-
+ 
         btn.addEventListener('click', function (e) {
             var inputV = input.value, str = ConvertPinyin(inputV);
             output.innerHTML = str + (!warned ? "" : "<br>以下字符未转换成功：<br>" + warning + "<br>若您想到了可以转换的emoji（谐音即可）<br>请联系作者 Atopos(QQ: 1827235572) 添加");
         }, false);
     </script>
 </body>
-
+ 
 <script src="https://blog-static.cnblogs.com/files/miluluyo/mouse-click.js"></script>
-
+ 
 </html>
